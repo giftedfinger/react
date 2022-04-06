@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+body{
+  background-color: #f1f5f8;
+  color: #222;
+  font-style: 'open san';
+}
+
+.bookList{
+width: 90vw;
+max-width: 1170px;
+margin: 5rem auto;
+display: grid;
+gap: 2rem;
+
+}
+
+.book{
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  
+}
+.book h2,.book h3,.book img{
+  margin-left:auto;
+}
+.book h3{
+color: #617d98;
+font-size: 0.75rem;
+margin-top: 0.25rem;
+
+}
+@media screen and (min-width:768px) {
+.bookList{
+  grid-template-columns: repeat(3,1fr);
+}
+}
